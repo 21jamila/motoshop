@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+          /* Flex container to place image and content side by side */
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap; /* Makes it responsive */
+  }
+  
+  /* Image section */
+  .hero-banner {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .hero-banner img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Content section */
+  .hero-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-flex {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content {
+      text-align: center;
+    }
+  }
+  .training-path {
+    padding: 80px 20px;
+    
+  }
+  
+  .path-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .path-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .path-subtitle {
+    font-size: 20px;
+    color: #ff6f00;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .path-description {
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  .path-banner {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .path-banner img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .path-flex {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .path-content {
+      max-width: 100%;
+    }
+  }
+  .training-programs {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.training-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.training-header .section-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.training-subtitle {
+  font-size: 20px;
+  color: #004b9b;
+  font-weight: 600;
+}
+
+.training-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.change-life-title {
+  font-size: 24px;
+  margin-top: 30px;
+  color: #ff6600;
+  font-weight: 700;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.program-card {
+  background-color: #f1f4f9;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+.program-card h4 {
+  font-size: 20px;
+  color: #005abb;
+  margin-bottom: 10px;
+}
+
+.program-card p {
+  font-size: 16px;
+  color: #555;
+}
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+  }
+  
+  .program-card {
+    background-color: #f4f7fb;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .program-icon {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .program-card:hover .program-icon {
+    transform: scale(1.05);
+  }
+  /* General box styling */
+  .box-content {
+    text-align: center; /* Center all content inside the box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center items horizontally and vertically */
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #ccc; /* Light border around the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #fff; /* White background */
+}
+
+.box-content .logo {
+    width: 80px; /* Smaller logo size */
+    margin-bottom: 15px; /* Space below the logo */
+}
+
+
+
+.box-content .btn {
+    background-color: #007BFF; /* Primary button color */
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px; /* Smaller padding for a smaller button */
+    border-radius: 5px;
+    font-size: 14px; /* Smaller font size */
+    display: inline-flex;
+    align-items: center;
+}
+
+.box-content .btn:hover {
+    background-color: #e25a00; /* Darker blue on hover */
+}
+
+
+
+  .start-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  
+  
+ 
+  
+  .slogan {
+    color: #f55e00;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+  /* Add these new mobile-first styles */
+  @media screen and (max-width: 768px) {
+      .container {
+          padding: 0 15px;
+      }
+
+      .hero-content {
+          padding: 40px 0;
+      }
+
+      .hero-content .h1 {
+          font-size: 2rem;
+          text-align: center;
+      }
+
+      .hero-text {
+          text-align: center;
+          font-size: 1rem;
+      }
+
+      .hero-banner img {
+          max-width: 100%;
+          height: auto;
+      }
+
+      .training-programs {
+          padding: 40px 15px;
+      }
+
+      .programs-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+      }
+
+      .program-card {
+          margin: 0 10px;
+      }
+
+      .program-icon {
+          width: 150px;
+          height: 150px;
+      }
+
+      .path-flex {
+          padding: 20px;
+      }
+
+      .path-content {
+          text-align: center;
+      }
+
+      .section-title {
+          font-size: 1.8rem;
+      }
+
+      .path-subtitle {
+          font-size: 1.2rem;
+      }
+
+      .path-description {
+          font-size: 1rem;
+      }
+
+      .box-content {
+          margin: 10px;
+          padding: 15px;
+      }
+
+      .header {
+          padding: 10px 0;
+      }
+
+      .navbar-list {
+          flex-direction: column;
+          gap: 15px;
+      }
+
+      .btn {
+          padding: 8px 16px;
+          font-size: 0.9rem;
+      }
+
+      .header-actions {
+          gap: 10px;
+      }
+  }
+
+  /* Add these base styles */
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+
+  body {
+      overflow-x: hidden;
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+              
+              
+              
+            
+              
+            
+            
+            
+          </style>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+          <!-- 
+            - primary meta tag
+          -->
+          <title>HDMWeb academy</title>
+          <meta name="title" content="EduWeb - The Best Program to Enroll for Exchange">
+          <meta name="description" content="This is an education html template made by codewithsadee">
+        
+          <!-- 
+            - favicon
+          -->
+          <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+        
+          <!-- 
+            - custom css link
+          -->
+          <link rel="stylesheet" href="./assets/css/style.css">
+        
+          <!-- 
+            - google font link
+          -->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link
+            href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+            rel="stylesheet">
+        
+          <!-- 
+            - preload images
+          -->
+          <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+          <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+          <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+          <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+          <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+        
+    </head>
+<body>
+    <!-- header -->
+    <header class="header" data-header>
+        <div class="container">
+    
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="90" height="20" alt="HdmWeb logo">
+          </a>
+    
+          <nav class="navbar" data-navbar>
+    
+            <div class="wrapper">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.png" width="162" height="50" alt="HdmWeb logo">
+              </a>
+    
+              <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+    
+            <ul class="navbar-list">
+    
+              <li class="navbar-item">
+                <a href="hmd.html" class="navbar-link" data-nav-link>Home</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="academy.html" class="navbar-link" data-nav-link>Academy</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="programming.html" class="navbar-link" data-nav-link>Programming & Devloppement</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#Services" class="navbar-link" data-nav-link>Services</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="#articles" class="navbar-link" data-nav-link>All articles</a>
+              </li>
+              <div class="header-actions">
+                <!-- Add language switcher -->
+                <div class="language-switcher">
+                  <select id="languageSelect" class="language-select">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="ar">العربية</option>
+                  </select>
+                </div>
+              
+                <!-- Existing buttons -->
+                
+              </div>
+              <li class="navbar-item">
+                <!-- <a href="#" class="navbar-link" data-nav-link>Robot Page</a> -->
+              </li>
+    
+            </ul>
+    
+          </nav>
+    
+          <div class="header-actions">
+    
+           
+            <a href="#" class="btn has-before">
+              <span class="span">Talk To A Friend</span>
+    
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+    
+            <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+              <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+    
+          </div>
+    
+          <div class="overlay" data-nav-toggler data-overlay></div>
+    
+        </div>
+    </header>
+
+
+
+    <main>
+        <article>
+            <section class="section hero has-bg-image" id="home" aria-label="home"
+                style="background-image: url('./assets/images/video-bg.png')">
+                <div class="container hero-flex">
+
+                    <!-- Image on the left -->
+                   
+
+                    <!-- Content on the right -->
+                    <div class="hero-content">
+
+                    <h1 class="h1 section-title">
+                        Welcome to <span class="span">HDM Web </span> Academy
+                    </h1>
+
+                    <p class="hero-text">
+                        The first academy in Morocco for artificial intelligence.<br>
+                        Learn, create, and lead the future with us.
+                    </p>
+
+                    <a href="#start" class="btn has-before">
+                        <span class="span">Join the Academy</span>
+                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                    
+
+                    </div>
+                    
+                    
+                    <figure class="hero-banner"><br><br><br><b></b>
+
+                        <div >
+                          <!-- <img src="./assets/images/robot4.png" width="270" height="300" alt="hero banner" class="img-cover"> -->
+                        </div>
+            
+                        <div >
+                          <!-- <img src="./assets/images/robot3.png" width="270" height="300" alt="hero banner" class="img-cover"> -->
+                        </div>
+                          <br><br><br><br>
+                          <img src="./assets/images/4.png" width="370" height="290" alt="HDMWeb Academy"  class="shape hero-shape-1">
+            
+                        <!-- <img src="./assets/images/robot.png" width="622" height="551" alt="" class="shape hero-shape-2"> -->
+            
+                      </figure>
+
+                </div>
+                
+            </section>
+
+
+
+            <section class="section training-path" id="training-path">
+                <div class="container path-flex">
+              
+                  <!-- Left: Text content -->
+                  <div class="path-content">
+                    <h2 class="section-title">Distinctive Training Path</h2>
+                    <p class="path-subtitle">
+                      In E-Marketing And Artificial Intelligence
+                    </p>
+              
+                    <p class="path-description">
+                      Do you want to become an expert in one of the most in-demand specialties in the world and Morocco?<br><br>
+                      In a world where artificial intelligence is determining the fate of marketing campaigns, our school offers the most advanced program for learning data analysis, creating smart campaigns, and marketing automation using the latest AI tools.
+                    </p>
+              
+                    <a href="#register" class="btn has-before">
+                      <span class="span">Start Your Journey</span>
+                      <ion-icon name="rocket-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+              
+
+                  
+                  <!-- Right: Optional image -->
+                  <figure class="path-banner">
+                    
+                    <img src="./assets/images/mark.png" alt="AI Marketing" width="400" height="300">
+                  </figure>
+              
+                </div>
+              </section>
+
+
+
+              <section class="section training-programs" id="training">
+                <div class="container">
+              
+                  <!-- Section Introduction -->
+                  <div class="training-header">
+                    <div class="training-description">
+                       
+                  
+                        <h3 class="change-life-title">Change your life now</h3>
+                        <p>Training courses that keep pace with the times and the fast-paced world in which we live.</p>
+                        <a href="#register" class="btn has-before">
+                          <span class="span">Click here to get started</span>
+                          <ion-icon name="rocket-outline" aria-hidden="true"></ion-icon>
+                        </a>
+                      </div>
+                  </div>
+              
+                 
+                  
+                  <!-- Programs Grid with Images -->
+                  <div class="programs-grid">
+                    <div class="program-card">
+                      <img src="./assets/images/photoshop.png" alt="Video Editing" class="program-icon">
+                      <h4>Video Production & Editing</h4>
+                      <p>For photography and design. Learn essential editing tools and storytelling techniques.</p>
+                    </div>
+                  
+                    <div class="program-card">
+                      <img src="./assets/images/ai.png" alt="AI" class="program-icon">
+                      <h4>Artificial Intelligence for Beginners</h4>
+                      <p>Get introduced to AI concepts, tools, and real-world applications.</p>
+                    </div>
+                  
+                    <div class="program-card">
+                      <img src="./assets/images/web.png" alt="Web Development" class="program-icon">
+                      <h4>Web Development</h4>
+                      <p>Design websites using Wix or Shopify (no coding). Learn essential web basics.</p>
+                    </div>
+                  
+                    <div class="program-card">
+                      <img src="./assets/images/autommation.png" alt="Automation" class="program-icon">
+                      <h4>Automation</h4>
+                      <p>Automate business processes with modern tools. Save time and scale smarter.</p>
+                    </div>
+                  
+                    <div class="program-card">
+                      <img src="./assets/images/network.png" alt="Networks" class="program-icon">
+                      <h4>Information Networks</h4>
+                      <p>Understand how networks operate and support today’s digital world.</p>
+                    </div>
+                  
+                    <div class="program-card">
+                      <img src="./assets/images/local-ecommerce.png" alt="Local E-Commerce" class="program-icon">
+                      <h4>Local E-Commerce</h4>
+                      <p>Start and manage a successful online store in Morocco with local tools.</p>
+                    </div>
+                  
+                    <div class="program-card">
+                      <img src="./assets/images/global-ecommerce.png" alt="International E-Commerce" class="program-icon">
+                      <h4>International E-Commerce</h4>
+                      <p>Expand globally with platforms like Amazon, Etsy, or Shopify.</p>
+                    </div>
+                  
+                    <div class="program-card">
+                      <img src="./assets/images/ads.png" alt="Smart Advertising" class="program-icon">
+                      <h4>Smart Advertising</h4>
+                      <p>Learn how to create AI-driven marketing campaigns that convert.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </section>
+
+              
+              <section class="section training-path" id="training-path">
+                <div class="container path-flex">
+              
+                  <!-- Left: Text content -->
+                  <div class="path-content">
+                    <h2 class="section-title">Advantages of Our Programs</h2>
+                    <p class="path-subtitle">
+                        <strong>100% practical and results-oriented approach</strong>
+                    </p>
+              
+                    <p class="path-description">
+                        We know for sure that every human being learns by trial and error with a love of exploration and curiosity. All programs are taught through real projects in order to consolidate the information and highlight its importance to the recipient, creating curiosity and a deep desire for knowledge and exploration.</p>
+              
+                       
+                   
+                  </div>
+              
+                  <!-- Right: Optional image -->
+                  
+                  <figure class="about-banner" style="flex: 1 1 45%; position: relative; max-width: 520px; margin: auto;">
+                    <div style="position: relative; padding-bottom: 71.15%; height: 0; overflow: hidden; border-radius: 10px;">
+                      <img 
+                        src="./assets/images/avantage.png" 
+                        alt="Website Preview" 
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                   <img src="./assets/images/about-shape-1.svg" loading="lazy" alt="" class="shape about-shape-1">
+                    <img src="./assets/images/about-shape- 2.svg" loading="lazy" alt="" class="shape about-shape-2">
+                    <img src="./assets/images/about-shape-3.png" loading="lazy" alt="" class="shape about-shape-3">
+                  </figure>
+              
+              
+                </div>
+              </section>
+
+
+              <section class="start-box">
+                <div class="box-content">
+                  <img src="./assets/images/logo.png" alt="HDM Web Logo" class="logo">
+                  
+                  <h2 class="slogan">Fill out the form</h2>
+                  <p class="subtext">We will contact you as soon as possible.</p>
+                  
+                  <a href="#start" class="btn">
+                    <ion-icon name="create-outline"></ion-icon> Click here to get started
+                  </a>
+                </div>
+              </section>
+              
+              
+
+
+
+              
+              
+              
+              
+
+
+
+
+
+        </article>
+    </main>
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+    
+    
+    
+    
+      <!-- 
+        - custom js link
+      -->
+      <script src="./assets/js/script.js" defer></script>
+    
+      <!-- 
+        - ionicon link
+      -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+      
+</body>
+</html>
