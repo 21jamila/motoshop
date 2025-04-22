@@ -191,166 +191,11 @@
   .program-card:hover .program-icon {
     transform: scale(1.05);
   }
-  /* General box styling */
-  .box-content {
-    text-align: center; /* Center all content inside the box */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Center items horizontally and vertically */
-    padding: 20px;
-    margin: 20px;
-    border: 2px solid #ccc; /* Light border around the section */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    background-color: #fff; /* White background */
-}
-
-.box-content .logo {
-    width: 80px; /* Smaller logo size */
-    margin-bottom: 15px; /* Space below the logo */
-}
-
-
-
-.box-content .btn {
-    background-color: #007BFF; /* Primary button color */
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 15px; /* Smaller padding for a smaller button */
-    border-radius: 5px;
-    font-size: 14px; /* Smaller font size */
-    display: inline-flex;
-    align-items: center;
-}
-
-.box-content .btn:hover {
-    background-color: #e25a00; /* Darker blue on hover */
-}
-
-
-
-  .start-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    background-color: #fff;
+  .section.hero {
+    padding-top: 170px; /* or less */
   }
-  
   
  
-  
-  .slogan {
-    color: #f55e00;
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  
-
-  /* Add these new mobile-first styles */
-  @media screen and (max-width: 768px) {
-      .container {
-          padding: 0 15px;
-      }
-
-      .hero-content {
-          padding: 40px 0;
-      }
-
-      .hero-content .h1 {
-          font-size: 2rem;
-          text-align: center;
-      }
-
-      .hero-text {
-          text-align: center;
-          font-size: 1rem;
-      }
-
-      .hero-banner img {
-          max-width: 100%;
-          height: auto;
-      }
-
-      .training-programs {
-          padding: 40px 15px;
-      }
-
-      .programs-grid {
-          grid-template-columns: 1fr;
-          gap: 20px;
-      }
-
-      .program-card {
-          margin: 0 10px;
-      }
-
-      .program-icon {
-          width: 150px;
-          height: 150px;
-      }
-
-      .path-flex {
-          padding: 20px;
-      }
-
-      .path-content {
-          text-align: center;
-      }
-
-      .section-title {
-          font-size: 1.8rem;
-      }
-
-      .path-subtitle {
-          font-size: 1.2rem;
-      }
-
-      .path-description {
-          font-size: 1rem;
-      }
-
-      .box-content {
-          margin: 10px;
-          padding: 15px;
-      }
-
-      .header {
-          padding: 10px 0;
-      }
-
-      .navbar-list {
-          flex-direction: column;
-          gap: 15px;
-      }
-
-      .btn {
-          padding: 8px 16px;
-          font-size: 0.9rem;
-      }
-
-      .header-actions {
-          gap: 10px;
-      }
-  }
-
-  /* Add these base styles */
-  * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-  }
-
-  body {
-      overflow-x: hidden;
-  }
-
-  img {
-      max-width: 100%;
-      height: auto;
-  }
-              
               
               
             
@@ -370,8 +215,8 @@
             - primary meta tag
           -->
           <title>HDMWeb academy</title>
-          <meta name="title" content="EduWeb - The Best Program to Enroll for Exchange">
-          <meta name="description" content="This is an education html template made by codewithsadee">
+          <meta name="title" content="HDMWEB">
+          <meta name="description" content="This is an HDMWEB website">
         
           <!-- 
             - favicon
@@ -438,11 +283,11 @@
               </li>
     
               <li class="navbar-item">
-                <a href="#Services" class="navbar-link" data-nav-link>Services</a>
+                <a href="Services.html" class="navbar-link" data-nav-link>Services</a>
               </li>
     
               <li class="navbar-item">
-                <a href="#articles" class="navbar-link" data-nav-link>All articles</a>
+                <a href="articles.html" class="navbar-link" data-nav-link>All articles</a>
               </li>
               <div class="header-actions">
                 <!-- Add language switcher -->
@@ -711,175 +556,6 @@
 
         </article>
     </main>
-
-
-    
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
-
-    <div class="footer-top section">
-      <div class="container grid-list">
-
-        <div class="footer-brand">
-
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.png" width="162" height="50" alt="EduWeb logo">
-          </a>
-
-          <p class="footer-brand-text">
-            Discover your potential with HDMWeb Academy—where creativity meets technology and students become digital leaders.
-          </p>
-          
-
-          <div class="wrapper">
-            <span class="span">Address:</span>
-
-            <address class="address">Ait Ourir </address>
-          </div>
-
-          <div class="wrapper">
-            <span class="span">Call:</span>
-
-            <a href="tel:+011234567890" class="footer-link">+212 665-073010</a>
-          </div>
-
-          <div class="wrapper">
-            <span class="span">Email:</span>
-
-            <a href="mailto:info@eduweb.com" class="footer-link">hdmwebacademy@gmail.com</a>
-          </div>
-
-        </div>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Online Platform</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">About</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Courses</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Instructor</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Events</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Instructor Profile</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Purchase Guide</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Links</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Contact Us</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Gallery</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">News & Articles</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Coming Soon</a>
-          </li>
-
-        </ul>
-
-        <div class="footer-list">
-
-          <p class="footer-list-title">Contacts</p>
-
-          <p class="footer-list-text">
-            Enter your email address to register to our newsletter subscription
-          </p>
-
-          <form action="" class="newsletter-form">
-            <input type="email" name="email_address" placeholder="Your email" required class="input-field">
-
-            <button type="submit" class="btn has-before">
-              <span class="span">Subscribe</span>
-
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </button>
-          </form>
-
-          <ul class="social-list">
-
-            <li>
-              <a href="https://www.facebook.com/share/1Acx4pQyQV/" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://linkedin.com" class="social-link">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.instagram.com/hdmwebacademy.ma?igsh=anpuZHk3MDJ4OXlx" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://wa.me/212665073010" class="social-link">
-                <ion-icon name="logo-whatsapp"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container">
-
-        <p class="copyright">
-          HDMWeb Academy Wibesite Created By <a href="#" class="copyright-link"> Jamila Ouhadi</a>
-        </p>
-
-      </div>
-    </div>
-
-  </footer>
-
 
 
 
