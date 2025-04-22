@@ -2,10 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
 
 
 
@@ -1646,3 +1642,163 @@
 
 /* academy */
 
+ /* General box styling */
+ .box-content {
+  text-align: center; /* Center all content inside the box */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center items horizontally and vertically */
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid #ccc; /* Light border around the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #fff; /* White background */
+}
+
+.box-content .logo {
+  width: 80px; /* Smaller logo size */
+  margin-bottom: 15px; /* Space below the logo */
+}
+
+
+
+.box-content .btn {
+  background-color: #007BFF; /* Primary button color */
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px; /* Smaller padding for a smaller button */
+  border-radius: 5px;
+  font-size: 14px; /* Smaller font size */
+  display: inline-flex;
+  align-items: center;
+}
+
+.box-content .btn:hover {
+  background-color: #e25a00; /* Darker blue on hover */
+}
+
+
+
+.start-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+
+
+
+.slogan {
+  color: #f55e00;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* Add these new mobile-first styles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-content {
+        padding: 40px 0;
+    }
+
+    .hero-content .h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .hero-banner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .training-programs {
+        padding: 40px 15px;
+    }
+
+    .programs-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .program-card {
+        margin: 0 10px;
+    }
+
+    .program-icon {
+        width: 150px;
+        height: 150px;
+    }
+
+    .path-flex {
+        padding: 20px;
+    }
+
+    .path-content {
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .path-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .path-description {
+        font-size: 1rem;
+    }
+
+    .box-content {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .header-actions {
+        gap: 10px;
+    }
+}
+
+/* Add these base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+            
