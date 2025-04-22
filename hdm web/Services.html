@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+          /* Flex container to place image and content side by side */
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap; /* Makes it responsive */
+  }
+  
+  /* Image section */
+  .hero-banner {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .hero-banner img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Content section */
+  .hero-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-flex {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content {
+      text-align: center;
+    }
+  }
+  .training-path {
+    padding: 80px 20px;
+    
+  }
+  
+  .path-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .path-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .path-subtitle {
+    font-size: 20px;
+    color: #ff6f00;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .path-description {
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  .path-banner {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .path-banner img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .path-flex {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .path-content {
+      max-width: 100%;
+    }
+  }
+  .training-programs {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.training-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.training-header .section-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.training-subtitle {
+  font-size: 20px;
+  color: #004b9b;
+  font-weight: 600;
+}
+
+.training-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.change-life-title {
+  font-size: 24px;
+  margin-top: 30px;
+  color: #ff6600;
+  font-weight: 700;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.program-card {
+  background-color: #f1f4f9;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+.program-card h4 {
+  font-size: 20px;
+  color: #005abb;
+  margin-bottom: 10px;
+}
+
+.program-card p {
+  font-size: 16px;
+  color: #555;
+}
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+  }
+  
+  .program-card {
+    background-color: #f4f7fb;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .program-icon {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .program-card:hover .program-icon {
+    transform: scale(1.05);
+  }
+  .section.hero {
+    padding-top: 170px; /* or less */
+  }
+  
+ 
+              
+              
+            
+              
+            
+            
+            
+          </style>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+          <!-- 
+            - primary meta tag
+          -->
+          <title>HDMWeb academy</title>
+          <meta name="title" content="HDMWEB">
+          <meta name="description" content="This is an HDMWEB website">
+          <!-- 
+            - favicon
+          -->
+          <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+        
+          <!-- 
+            - custom css link
+          -->
+          <link rel="stylesheet" href="./assets/css/style.css">
+        
+          <!-- 
+            - google font link
+          -->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link
+            href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+            rel="stylesheet">
+        
+          <!-- 
+            - preload images
+          -->
+          <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+          <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+          <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+          <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+          <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+        
+    </head>
+<body>
+    <!-- header -->
+    <header class="header" data-header>
+        <div class="container">
+    
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="90" height="20" alt="HdmWeb logo">
+          </a>
+    
+          <nav class="navbar" data-navbar>
+    
+            <div class="wrapper">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.png" width="162" height="50" alt="HdmWeb logo">
+              </a>
+    
+              <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+    
+            <ul class="navbar-list">
+    
+              <li class="navbar-item">
+                <a href="hmd.html" class="navbar-link" data-nav-link>Home</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="academy.html" class="navbar-link" data-nav-link>Academy</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="programming.html" class="navbar-link" data-nav-link>Programming & Devloppement</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="Services.html" class="navbar-link" data-nav-link>Services</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="articles.html" class="navbar-link" data-nav-link>All articles</a>
+              </li>
+              <div class="header-actions">
+                <!-- Add language switcher -->
+                <div class="language-switcher">
+                  <select id="languageSelect" class="language-select">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="ar">العربية</option>
+                  </select>
+                </div>
+              
+                <!-- Existing buttons -->
+                
+              </div>
+              <li class="navbar-item">
+                <!-- <a href="#" class="navbar-link" data-nav-link>Robot Page</a> -->
+              </li>
+    
+            </ul>
+    
+          </nav>
+    
+          <div class="header-actions">
+    
+           
+            <a href="#" class="btn has-before">
+              <span class="span">Talk To A Friend</span>
+    
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+    
+            <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+              <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+    
+          </div>
+    
+          <div class="overlay" data-nav-toggler data-overlay></div>
+    
+        </div>
+    </header>
+
+
+
+    <main>
+        <article>
+            <section class="section hero has-bg-image" id="home" aria-label="home"
+                style="background-image: url('./assets/images/video-bg.png')">
+                <div class="container hero-flex">
+
+                    <!-- Image on the left -->
+                   
+
+                    <!-- Content on the right -->
+                    <div class="hero-content">
+
+                    <h1 class="h1 section-title">
+                        HDM Web <span class="span">Services </span> 
+                    </h1>
+
+                    <p class="hero-text">
+                        HDMWeb Academy offers a variety of high-impact programs to help you build a successful career in tech:
+
+                    </p>
+
+                    <a href="#start" class="btn has-before">
+                        <span class="span">Click To Get Starting</span>
+                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                    
+
+                    </div>
+                    
+                    
+                    <figure class="hero-banner"><br><br><br><b></b>
+
+                        <div >
+                          <!-- <img src="./assets/images/robot4.png" width="270" height="300" alt="hero banner" class="img-cover"> -->
+                        </div>
+            
+                        <div >
+                          <!-- <img src="./assets/images/robot3.png" width="270" height="300" alt="hero banner" class="img-cover"> -->
+                        </div>
+                          <br><br><br><br>
+                          <img src="./assets/images/5.png" width="320" height="240" alt="HDMWeb Academy"  class="shape hero-shape-1">
+            
+                        <!-- <img src="./assets/images/robot.png" width="622" height="551" alt="" class="shape hero-shape-2"> -->
+            
+                      </figure>
+
+                </div>
+                
+            </section>
+
+
+
+
+            <section class="section training-path" id="training-path">
+                <div class="container path-flex">
+              
+                  <!-- Left: Text content -->
+                  <div class="path-content">
+                    <h2 class="section-title">Your success is our first passion
+                    </h2>
+                    <p class="path-subtitle">
+                        Our experts are with you from the very first steps!
+
+
+                    </p>
+              
+                    <p class="path-description">
+                        We provide comprehensive market analysis, guaranteed pricing strategies, and customized marketing plans tailored to your unique business needs. </p>
+              
+                    <a href="#register" class="btn has-before">
+                      <span class="span">Start Your Journey</span>
+                      <ion-icon name="rocket-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+              
+
+                  
+                  <!-- Right: Optional image -->
+                  <figure class="path-banner">
+                    
+                    <img src="./assets/images/succes.png" alt="AI Marketing" width="400" height="300">
+                  </figure>
+              
+                </div>
+              </section>
+
+
+
+                <!-- 
+        - #Services
+      -->
+
+        <section class="section business has-bg-image" id="Services" aria-label="Services" >
+            <div class="container">
+            <p class="section-subtitle">Our Services</p>
+            <br>
+            <h2 class="h2 section-title">Empowering Your Business with Digital Solutions</h2>
+            <br><br>
+            <p class="intro-text">
+                Welcome to our agency, your strategic partner for success in the digital world! We are a full-service Moroccan marketing agency that works hand in hand with startups and established brands to transform ideas into impactful campaigns that reach their target audiences and generate profits.
+            </p>
+            
+            <ul class="grid-list">
+                <!-- Business Item 1 -->
+                <li>
+                <div class="business-card">
+                    <figure class="card-banner img-holder has-after" style="--width: 370; --height: 220;">
+                    <img src="./assets/images/montage.png" width="370" height="220" loading="lazy" alt="Montage" class="img-cover">
+                    </figure>
+                    <div class="card-content">
+                    <a href="#" class="card-btn" aria-label="read more">
+                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                    <span class="badge">Montage</span>
+                    <h3 class="h3">
+                        <a href="#" class="card-title">Video Shooting and Editing</a>
+                    </h3>
+                    <p class="card-text">We create impactful video content to tell your story and engage your audience.</p>
+                    </div>
+                </div>
+                </li>
+                
+                <!-- Business Item 2 -->
+                <li>
+                <div class="business-card">
+                    <figure class="card-banner img-holder has-after" style="--width: 370; --height: 220;">
+                    <img src="./assets/images/graphique.png" width="370" height="220" loading="lazy" alt="Graphic Design" class="img-cover">
+                    </figure>
+                    <div class="card-content">
+                    <a href="#" class="card-btn" aria-label="read more">
+                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                    <span class="badge">Design</span>
+                    <h3 class="h3">
+                        <a href="#" class="card-title">Graphic Design</a>
+                    </h3>
+                    <p class="card-text">We design visually compelling materials to enhance your brand identity.</p>
+                    </div>
+                </div>
+                </li>
+                
+                <!-- Additional Business Items -->
+                <!-- Business Item 3: Programming Solutions and Websites -->
+        <li>
+            <div class="business-card">
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                <img src="./assets/images/p.png" width="370" height="220" loading="lazy" alt="Programming Solutions" class="img-cover">
+            </figure>
+            <div class="card-content">
+                <a href="#" class="card-btn" aria-label="read more">
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+                <span class="badge">Programming</span>
+                <h3 class="h3">
+                <a href="#" class="card-title">Web Development</a>
+                </h3>
+                <br>
+                <p class="card-text">We provide cutting-edge web solutions to boost your online presence.</p>
+            </div>
+            </div>
+        </li>
+
+        <!-- Business Item 4: Social Media Management -->
+        <li>
+            <div class="business-card">
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                <img src="./assets/images/m.png" width="370" height="220" loading="lazy" alt="Social Media Management" class="img-cover">
+            </figure>
+            <div class="card-content">
+                <a href="#" class="card-btn" aria-label="read more">
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+                <span class="badge">Social Media</span>
+                <h3 class="h3">
+                <a href="#" class="card-title">Social Media Management</a>
+                </h3>
+                <p class="card-text">We manage your social media accounts to build a strong online community.</p>
+            </div>
+            </div>
+        </li>
+
+        <!-- Business Item 5: Digital Advertising -->
+        <li>
+            <div class="business-card">
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                <img src="./assets/images/digital.png" width="370" height="220" loading="lazy" alt="Digital Advertising" class="img-cover">
+            </figure>
+            <div class="card-content">
+                <a href="#" class="card-btn" aria-label="read more">
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+                <span class="badge">Advertising</span>
+                <h3 class="h3">
+                <a href="#" class="card-title">Digital Advertising</a>
+                </h3>
+                <p class="card-text">We create targeted digital advertising campaigns that drive results.</p>
+            </div>
+            </div>
+        </li>
+
+        <!-- Business Item 6: Digital Store Development -->
+        <li>
+            <div class="business-card">
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                <img src="./assets/images/d.png" width="370" height="220" loading="lazy" alt="Digital Store Development" class="img-cover">
+            </figure>
+            <div class="card-content">
+                <a href="#" class="card-btn" aria-label="read more">
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+                <span class="badge">Development</span>
+                <h3 class="h3">
+                <a href="#" class="card-title">E-commerce Solutions</a>
+                </h3>
+                <p class="card-text">We build and optimize digital stores that enhance your business growth.</p>
+            </div>
+            </div>
+        </li>
+                <!-- Continue in the same pattern for all business items -->
+        
+            </ul>
+        <br>
+            <a href="https://www.instagram.com" class="btn has-before">
+                <span class="span">Visit Our Instagram</span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+        </section>
+
+
+        <section class="section about" id="about" aria-label="about" style="background-image: url('./assets/images/blog-bg.svg')">
+            <div class="container">
+          
+              <figure class="about-banner" style="position: relative; width: 100%; max-width: 520px; margin: auto;">
+          
+                <!-- Responsive Image Embed -->
+                <div style="position: relative; padding-bottom: 71.15%; height: 0; overflow: hidden; border-radius: 10px;">
+                  <img 
+                    src="./assets/images/6.png" 
+                    alt="Image" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                </div>
+          
+                <!-- Decorative shapes (optional) -->
+                <img src="./assets/images/about-shape-1.svg" loading="lazy" alt="" class="shape about-shape-1">
+                <img src="./assets/images/about-shape-2.svg" loading="lazy" alt="" class="shape about-shape-2">
+                <img src="./assets/images/about-shape-3.png" loading="lazy" alt="" class="shape about-shape-3">
+          
+              </figure>
+          
+              <div class="about-content">
+          
+                <p class="section-subtitle">Join Us</p>
+          
+                <h2 class="h2 section-title">
+                  Digital <span class="span">Transformation</span>
+                </h2>
+          
+                <p class="section-text">
+                  Don’t miss the opportunity and join the digital transformation.<br>
+                  All you have to do is take the first step… we’ll complete the journey with you!
+                </p>
+          
+                <ul class="about-list">
+          
+                  <li class="about-item">
+                    <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+                    <span class="span">Our latest digital projects</span>
+                  </li>
+          
+                  <li class="about-item">
+                    <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+                    <span class="span">Visit our Instagram page to see our latest work.</span>
+                  </li>
+          
+                  <li class="about-item">
+                    <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+                    <span class="span"><a href="https://www.instagram.com/hdmwebacademy.ma" target="_blank" style="color: #000000; ">Visit our Instagram page now</a></span>
+                  </li>
+          
+                </ul>
+          
+                <img src="./assets/images/about-shape-4.svg" width="100" height="100" loading="lazy" alt="" class="shape about-shape-4">
+          
+              </div>
+          
+            </div>
+          </section>
+          
+
+
+      
+
+              
+              
+              
+              
+
+
+
+        
+
+            <section class="start-box">
+                <div class="box-content">
+                <img src="./assets/images/logo.png" alt="HDM Web Logo" class="logo">
+                
+                <h2 class="slogan">Fill out the form</h2>
+                <p class="subtext">We will contact you as soon as possible.</p>
+                
+                <a href="#start" class="btn">
+                    <ion-icon name="create-outline"></ion-icon> Click here to get started
+                </a>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+
+    
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="162" height="50" alt="HDMweb logo">
+          </a>
+
+          <p class="footer-brand-text">
+            Discover your potential with HDMWeb Academy—where creativity meets technology and students become digital leaders.
+          </p>
+          
+
+          <div class="wrapper">
+            <span class="span">Address:</span>
+
+            <address class="address">Ait Ourir </address>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+011234567890" class="footer-link">+212 665-073010</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:info@HDMweb.com" class="footer-link">hdmwebacademy@gmail.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Online Platform</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Instructor</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Events</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Instructor Profile</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Purchase Guide</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Gallery</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">News & Articles</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Coming Soon</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+          <p class="footer-list-text">
+            Enter your email address to register to our newsletter subscription
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/share/1Acx4pQyQV/" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://linkedin.com" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/hdmwebacademy.ma?igsh=anpuZHk3MDJ4OXlx" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://wa.me/212665073010" class="social-link">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          HDMWeb Academy Wibesite Created By <a href="#" class="copyright-link"> Jamila Ouhadi</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+    
+    
+    
+    
+      <!-- 
+        - custom js link
+      -->
+      <script src="./assets/js/script.js" defer></script>
+    
+      <!-- 
+        - ionicon link
+      -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+      
+</body>
+</html>
