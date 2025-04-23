@@ -2,6 +2,10 @@
   #style.css
 \*-----------------------------------*/
 
+/**
+ * copyright 2022 codewithsadee
+ */
+
 
 
 
@@ -1207,7 +1211,70 @@
   /*-----------------------------------*\
     #MEDIA QUERIES
   \*-----------------------------------*/
-  
+
+  /*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/* New: Mobile First Queries (Add this at the top) */
+@media (max-width: 575px) {
+  :root {
+    --fs-1: 3.2rem;
+    --fs-2: 2.4rem;
+    --fs-3: 2rem;
+    --section-padding: 50px;
+  }
+
+  .container {
+    padding-inline: 15px;
+  }
+
+  /* Header Mobile Fix */
+  .header .container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Hero Mobile Layout */
+  .hero-banner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Mobile Grid Fix */
+  .grid-list {
+    grid-template-columns: 1fr;
+  }
+
+  /* Mobile Image Fix */
+  .img-holder {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Mobile Menu Fix */
+  .navbar-list {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --fs-1: 2.8rem;
+    --fs-2: 2.2rem;
+    --fs-3: 1.8rem;
+  }
+
+  .hero .h1 {
+    font-size: 3.2rem;
+  }
+
+  /* Mobile Button Sizes */
+  .btn {
+    padding: 10px 15px;
+    font-size: 1.4rem;
+  }
+}
   /**
    * responsive for large than 575px screen
    */
